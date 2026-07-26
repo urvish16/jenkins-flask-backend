@@ -38,7 +38,7 @@ def submit():
 
 @app.route("/health", methods=["GET"])
 def health():
-    return jsonify({"status": "Flask backend is running"}), 200
+    return jsonify({"status": "Flask backend is running", "deployed_via": "Jenkins CI/CD"}), 200
 
 
 if __name__ == "__main__":
